@@ -25,7 +25,7 @@ RUN yarn install --pure-lockfile
 
 
 COPY ./src ./src
-
+RUN yarn build
 
 
 FROM node:${NODE_VERSION}-alpine as runtime
